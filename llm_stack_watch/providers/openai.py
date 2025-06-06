@@ -1,8 +1,8 @@
 import openai
 from typing import List, Dict, Any, Optional
-from ..core.base import BaseLLMProvider
-from ..config.settings import Config
-from ..utils.exceptions import ProviderError
+from llm_stack_watch.core.base import BaseLLMProvider
+from llm_stack_watch.config.settings import Config
+from llm_stack_watch.utils.exceptions import ProviderError
 
 class OpenAIProvider(BaseLLMProvider):
     """OpenAI provider implementation."""

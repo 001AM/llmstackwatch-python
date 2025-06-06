@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
-from ..config.settings import Config
-from utils.helpers import generate_id
+from llm_stack_watch.config.settings import Config
+from llm_stack_watch.utils.helpers import generate_id
 
 class BaseLLMProvider(ABC):
     """Base class for all LLM providers."""

@@ -1,6 +1,6 @@
 import time
 from typing import List, Dict, Any, Optional, TYPE_CHECKING
-from ..utils.helpers import generate_id
+from llm_stack_watch.utils.helpers import generate_id
 from .logger import Logger
 
 if TYPE_CHECKING:

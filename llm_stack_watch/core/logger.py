@@ -1,9 +1,9 @@
 import requests
 import time
 from typing import Dict, Any, Optional, List
-from ..config.settings import Config
-from ..utils.exceptions import LoggingError
-from ..utils.helpers import sanitize_data
+from llm_stack_watch.config.settings import Config
+from llm_stack_watch.utils.exceptions import LoggingError
+from llm_stack_watch.utils.helpers import sanitize_data
 
 class Logger:
     """Handles logging of LLM interactions."""
