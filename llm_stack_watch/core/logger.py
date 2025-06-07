@@ -46,7 +46,7 @@ class Logger:
             "completion_tokens": usage.get("completion_tokens", 0),
             "total_tokens": usage.get("total_tokens", 0),
             "assistant_message": choices[0].get("message", {}),
-            "user_message": user_message,
+            "user_message": user_message[0],
             "tags": tags,
             "status": "success" if response else "error"
         }

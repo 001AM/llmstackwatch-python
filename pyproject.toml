@@ -1,6 +1,6 @@
 [project]
 name = "llm-stack-watch"
-version = "0.1.5"
+version = "0.1.7"
 description = "A comprehensive LLM tracing and monitoring library"
 readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.8"

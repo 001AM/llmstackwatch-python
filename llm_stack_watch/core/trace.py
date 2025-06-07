@@ -22,8 +22,8 @@ class Trace:
         self.label = label
         self.meta_data = meta_data or {}
         self.trace_id = generate_id()
-        self.start_time = time.time(),
-        self.tags   = tags,
+        self.start_time = time.time()
+        self.tags   = tags
         self.logger = Logger(provider.config)
     
     def end(self, response: Dict[str, Any], messages: List[Dict[str, str]]) -> bool:
