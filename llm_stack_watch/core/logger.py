@@ -21,7 +21,8 @@ class Logger:
         user_id: Optional[str] = None,
         label: str = "default",
         meta_data: Optional[Dict[str, Any]] = None,
-        trace_id: Optional[str] = None
+        trace_id: Optional[str] = None,
+        tags: Optional[List[str]] = []
     ) -> bool:
         """Log LLM interaction data."""
         
@@ -46,6 +47,7 @@ class Logger:
             "total_tokens": usage.get("total_tokens", 0),
             "assistant_message": choices[0].get("message", {}),
             "user_message": user_message,
+            "tags": tags,
             "status": "success" if response else "error"
         }
         

@@ -21,11 +21,12 @@ class BaseLLMProvider(ABC):
         """Stream chat completion from the LLM provider."""
         pass
     
-    def trace(
+    def trace( 
         self, 
         user_id: Optional[str] = None,
         label: str = "default",
-        meta_data: Optional[Dict[str, Any]] = None
+        meta_data: Optional[Dict[str, Any]] = None,
+        tags: Optional[List[str]] = None
     ) -> 'Trace':
         """Create a trace for this provider."""
         from .trace import Trace
@@ -33,5 +34,6 @@ class BaseLLMProvider(ABC):
             provider=self,
             user_id=user_id,
             label=label,
+            tags=tags,
             meta_data=meta_data
         )
